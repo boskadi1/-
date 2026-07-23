@@ -1,0 +1,22 @@
+# STM32CubeIDE generated output
+Debug/
+Release/
+*.o
+*.d
+*.su
+*.cyclo
+*.map
+*.list
+
+# Local backups and archives
+*.bak
+*.zip
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE and OS temporary files
+.DS_Store
+Thumbs.db
+*.tmp
