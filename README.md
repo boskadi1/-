@@ -22,6 +22,21 @@ versions/v1.57/firmware/stm_cross_predict_unload_v157.elf
 versions/v1.57/openmv/OpenMV_cross_predict_unload_v2.7.py
 ```
 
+## v1.56
+
+v1.56 是高频轮速反馈版本：
+
+- 左右轮使用独立编码器速度 PID 闭环。
+- 编码器采样和电机速度闭环由 20 Hz 提高到 50 Hz。
+- 蓝牙轮速遥测由 2 Hz 提高到 10 Hz。
+- USART2 使用中断发送和4条消息队列，避免蓝牙发送阻塞循迹控制。
+
+对应固件：
+
+```text
+versions/v1.56/firmware/stm_line_pid_speed_feedback_50hz_v156.elf
+```
+
 本仓库用于保存自主运输小车从 **v1.50** 开始的稳定版本及后续更新。
 
 ## 目录结构

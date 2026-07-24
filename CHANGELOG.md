@@ -1,5 +1,15 @@
 # 更新记录
 
+## v1.56 - 2026-07-24
+
+- 左右轮继续使用独立编码器速度 PID 闭环。
+- 编码器采样及电机闭环频率由20 Hz提高到50 Hz。
+- 蓝牙左右轮目标速度、反馈速度及PWM遥测由2 Hz提高到10 Hz。
+- USART2改为中断发送，并增加4条消息发送队列。
+- 满速单周期编码器标定默认值按20 ms采样周期调整为40个脉冲。
+- 配套 OpenMV 继续使用 `OpenMV_rgb_load_unload_align_v2.5.py`。
+- STM32工程完整编译通过，生成 `stm_line_pid_speed_feedback_50hz_v156.elf`。
+
 ## v1.57 - 2026-07-24
 
 - 新增 `MV,CROSS,count,active,passed_count` 横线事件数据包。
