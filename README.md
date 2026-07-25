@@ -1,5 +1,10 @@
 # STM32 + OpenMV 自主小车
 
+## 平行系统
+
+- 主运输与循迹系统：`versions/`
+- 视觉、IMU、超声波避障系统：`obstacle-avoidance/XXXv3/`
+
 ## 当前推荐版本：v1.57
 
 v1.57 使用 OpenMV v2.7 与 STM32 双横线状态机：
